@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Discord Sidebar</title>
+  <style>
+    * {
+      font-family: Roboto;
+    }
+
+    body {
+      height: 4000px;
+    }
+
+    .group-profile-sidebar {
+      display: flex;
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 80px;
+      background-color: #1f2124;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .chat-sidebar {
+      position: fixed;
+      left: 80px;
+      top: 0;
+      bottom: 0;
+      width: 180px;
+      background-color: #2e3033;
+      color: #7c7c7b;
+      padding: 14px 14px 14px 14px;
+    }
+
+    .groupimg1,
+    .groupimg2,
+    .groupimg3 {
+      width: 55px;
+      height: 55px;
+      object-fit: cover;
+      border-radius: 50%;
+      padding-bottom: 8px;
+      padding-right: 8px;
+      padding-left: 8px;
+    }
+
+    .groupimg1 {
+      padding-top: 14px;
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #f0f0ea;
+      font-size: 18px;
+    }
+
+    .plus {
+      font-size: 24px;
+    }
+
+    .updates,
+    .faq,
+    .new-videos {
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="group-profile-sidebar">
+      <img src="cat.jpg" alt="" class="groupimg1">
+      <img src="doge.png" alt="" class="groupimg2">
+      <img src="satania.png" alt="" class="groupimg3">
+    </div>
+
+    <div class="chat-sidebar">
+      <div class="info">
+        <span class="info">INFO</span>
+        <span class="plus">+</span>
+      </div>
+      <p class="new-videos"># new-videos</p>
+      <p class="updates"># updates</p>
+      <p class="faq"># faq</p>
+    </div>
+  </div>
+</body>
+
+</html>

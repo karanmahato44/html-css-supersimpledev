@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Flex box header</title>
+  <style>
+    * {
+      font-family: Roboto;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: rgb(120, 82, 178);
+      align-items: center;
+      /* padding-top: 4px;
+      padding-bottom: 4px; */
+    }
+
+    .left {
+      margin-left: 20px;
+      color: white;
+      width: 130px;
+      font-size: 18px;
+    }
+
+    .right {
+      margin-right: 20px;
+    }
+
+    .center {
+      margin-left: 200px;
+      margin-right: 200px;
+      flex: 1;
+    }
+
+    .search-box {
+      border: none;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      padding-left: 12px;
+      border-radius: 24px;
+      flex: 1;
+      height: 25px;
+      outline: none;
+      width: 100%;
+    }
+
+    .download-button {
+      border: 1px solid white;
+      padding: 8px 15px 8px 15px;
+      font-size: 18px;
+      background-color: rgb(120, 82, 178);
+      color: white;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: opacity 0.15s;
+      margin-top: 4px;
+      margin-bottom: 4px;
+    }
+
+    .download-button:hover {
+      opacity: 0.8;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="left"><a href="https://google.com">Home</a></div>
+    <div class="center"><input type="text" placeholder="Search" class="search-box"></div>
+    <div class="right"><button class="download-button">Download</button></div>
+  </div>
+</body>
+
+</html>

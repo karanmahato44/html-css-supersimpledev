@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positions</title>
+  <style>
+    body {
+      height: 1000px;
+      padding-top: 46px;
+      padding-left: 80px;
+    }
+
+    .header {
+      position: fixed;
+      z-index: 100;
+      background-color: black;
+      color: white;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 40px;
+    }
+
+    .box1 {
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+    }
+
+    .box2 {
+      width: 200px;
+      height: 200px;
+      background-color: lightpink;
+      position: relative;
+    }
+
+    .sidebar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      top: 40px;
+      background-color: lightgreen;
+      width: 72px;
+      /* z-index: 1; */
+    }
+
+    .absolute {
+      position: absolute;
+      background-color: red;
+      color: white;
+      bottom: 10px;
+      right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <span>foo</span>
+  </div>
+  <div class="sidebar">
+    <div class="absolute">X</div>
+  </div>
+
+  <div class="box1">div1</div>
+  <div class="box2">div2
+    <div class="absolute">5:44</div>
+  </div>
+
+</body>
+
+</html>

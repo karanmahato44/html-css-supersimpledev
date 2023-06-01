@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tweet-div {
+            border: none;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+            width: 450px;
+            border-radius: 48px;
+            padding: 12px;
+        }
+
+        .profile-pic {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 50%;
+            vertical-align: middle;
+
+        }
+
+        .text-box {
+            vertical-align: middle;
+            color: rgb(100, 100, 100);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            margin-left: 8px;
+            outline: none;
+            border: none;
+            width: 300px;
+        }
+
+        .tweet-button {
+            /* margin-left: 100px; */
+            border: none;
+            background-color: #4998e8;
+            padding: 10px 14px 10px 14px;
+            border-radius: 28px;
+            font-weight: bold;
+            color: white;
+            transition: opacity 0.15s;
+            cursor: pointer;
+        }
+
+        .tweet-button:hover {
+            opacity: 0.8;
+        }
+
+        .tweet-button:active {
+            opacity: 0.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tweet-div">
+        <img src="cat.jpg" alt="" class="profile-pic">
+        <input type="text" class="text-box" placeholder="What's happening?">
+        <button class="tweet-button">Tweet</button>
+    </div>
+</body>
+
+</html>

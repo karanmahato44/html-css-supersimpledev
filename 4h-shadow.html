@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D click</title>
+    <style>
+        .d3-click {
+            color: white;
+            border: none;
+            background-color: #017400;
+            cursor: pointer;
+            font-size: 18px;
+            padding: 8px 16px 8px 16px;
+            box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
+            transition: margin 0.3s, box-shadow 0.3s, opacity 0.3s;
+        }
+        
+        .d3-click:active {
+            margin: 3px 0px 0px 3px;
+            box-shadow: none;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <button class="d3-click">Shadow</button>
+</body>
+</html>
